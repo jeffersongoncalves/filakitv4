@@ -1,7 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-@tailwind variants;
+@import '../../../../vendor/filament/filament/resources/css/theme.css';
+
+@config 'tailwind.config.js';
 
 ::-webkit-scrollbar {
     width: .56vw;
@@ -94,3 +93,4 @@
     background-position: right center; /* change the direction of the change here */
     text-decoration: none;
 }
+
