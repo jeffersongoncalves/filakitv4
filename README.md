@@ -25,10 +25,12 @@ web applications with a ready-to-use multi-panel structure.
 ``` bash
 # Clone the repository
 laravel new my-app --using=jeffersongoncalves/filakit
-
+```
+``` bash
 # Install JavaScript dependencies
 npm install
-
+```
+``` bash
 # Set up environment
 cp .env.example .env
 php artisan key:generate
@@ -37,7 +39,8 @@ php artisan key:generate
 
 # Run migrations
 php artisan migrate
-
+```
+``` bash
 # Run the server
 php artisan serve
 ```
