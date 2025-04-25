@@ -59,6 +59,65 @@ Run the server
 php artisan serve
 ```
 
+## Installation with Docker
+
+Clone the repository
+```bash
+laravel new my-app --using=jeffersongoncalves/filakit --database=mysql
+```
+
+Move into the project directory
+```bash
+cd my-app
+```
+
+Install Composer dependencies
+```bash
+composer install
+```
+
+Set up environment
+```bash
+cp .env.example .env
+```
+
+Configuring custom ports may be necessary if you have other services running on the same ports.
+
+```bash
+# Application Port (ex: 8080)
+APP_PORT=8080
+
+# MySQL Port (ex: 3306)
+FORWARD_DB_PORT=3306
+
+# Redis Port (ex: 6379)
+FORWARD_REDIS_PORT=6379
+
+# Mailpit Port (ex: 1025)
+FORWARD_MAILPIT_PORT=1025
+```
+
+Start the Sail containers
+```bash
+./vendor/bin/sail up -d
+```
+You won’t need to run `php artisan serve`, as Laravel Sail automatically handles the development server within the container.
+
+Attach to the application container
+```bash
+./vendor/bin/sail shell
+```
+
+Generate the application key
+```bash
+php artisan key:generate
+```
+
+Install JavaScript dependencies
+```bash
+pnpm install
+```
+
 ## Authentication Structure
 
 FilaKit comes pre-configured with a custom authentication system that supports different types of users:
