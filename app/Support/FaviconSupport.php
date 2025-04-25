@@ -11,7 +11,7 @@ abstract class FaviconSupport
 {
     public static function routes(): void
     {
-        if (config('filakit.favicon.enable', false)) {
+        if (config('filakit.favicon.enabled', false)) {
             Route::any('manifest.json', fn () => self::getManifestJson());
             Route::any('browserconfig.xml', fn () => self::getBrowserConfigXml());
             if (! empty(config('filakit.favicon.logo'))) {
