@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Filament\Resources\Admins\Tables;
+namespace App\Filament\Resources\Users\Tables;
 
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteAction;
@@ -10,8 +10,10 @@ use Filament\Actions\ViewAction;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
+use STS\FilamentImpersonate\Actions\Impersonate;
+use function route;
 
-class AdminsTable
+class UsersTable
 {
     public static function configure(Table $table): Table
     {
@@ -42,6 +44,10 @@ class AdminsTable
                 //
             ])
             ->actions([
+                Impersonate::make('impersonate')
+                    ->guard('web')
+                    ->backTo(route('filament.admin.pages.dashboard'))
+                    ->redirectTo(route('filament.app.pages.dashboard')),
                 ViewAction::make(),
                 EditAction::make(),
                 DeleteAction::make(),

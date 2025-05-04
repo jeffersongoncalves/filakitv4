@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Filament\Resources\Admins;
+namespace App\Filament\Resources\Users;
 
-use App\Filament\Resources\Admins\Pages\CreateAdmin;
-use App\Filament\Resources\Admins\Pages\EditAdmin;
-use App\Filament\Resources\Admins\Pages\ListAdmins;
-use App\Filament\Resources\Admins\Pages\ViewAdmin;
-use App\Filament\Resources\Admins\Schemas\AdminForm;
-use App\Filament\Resources\Admins\Schemas\AdminInfolist;
-use App\Filament\Resources\Admins\Tables\AdminsTable;
-use App\Models\Admin;
+use App\Filament\Resources\Users\Pages\CreateUser;
+use App\Filament\Resources\Users\Pages\EditUser;
+use App\Filament\Resources\Users\Pages\ListUsers;
+use App\Filament\Resources\Users\Pages\ViewUser;
+use App\Filament\Resources\Users\Schemas\UserForm;
+use App\Filament\Resources\Users\Schemas\UserInfolist;
+use App\Filament\Resources\Users\Tables\UsersTable;
+use App\Models\User;
 use BackedEnum;
 use Filament\Resources\Resource;
 use Filament\Schemas\Schema;
@@ -18,11 +18,11 @@ use Filament\Tables\Table;
 use Illuminate\Support\Facades\Cache;
 use function __;
 
-class AdminResource extends Resource
+class UserResource extends Resource
 {
-    protected static ?string $model = Admin::class;
+    protected static ?string $model = User::class;
 
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::UserCircle;
+    protected static string|BackedEnum|null $navigationIcon = Heroicon::User;
 
     protected static bool $isGloballySearchable = true;
 
@@ -40,42 +40,43 @@ class AdminResource extends Resource
 
     public static function getModelLabel(): string
     {
-        return __('Admin');
+        return __('User');
     }
 
     public static function getPluralModelLabel(): string
     {
-        return __('Admins');
+        return __('Users');
     }
 
     public static function getNavigationLabel(): string
     {
-        return __('Admins');
+        return __('Users');
     }
 
     public static function getNavigationGroup(): ?string
     {
-        return __('Management');
+        return __('User');
     }
 
     public static function getNavigationBadge(): ?string
     {
-        return (string) Cache::rememberForever('admins_count', fn () => Admin::query()->count());
+        return (string) Cache::rememberForever('users_count', fn () => User::query()->count());
     }
+
 
     public static function form(Schema $schema): Schema
     {
-        return AdminForm::configure($schema);
+        return UserForm::configure($schema);
     }
 
     public static function infolist(Schema $schema): Schema
     {
-        return AdminInfolist::configure($schema);
+        return UserInfolist::configure($schema);
     }
 
     public static function table(Table $table): Table
     {
-        return AdminsTable::configure($table);
+        return UsersTable::configure($table);
     }
 
     public static function getRelations(): array
@@ -88,10 +89,10 @@ class AdminResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => ListAdmins::route('/'),
-            'create' => CreateAdmin::route('/create'),
-            'view' => ViewAdmin::route('/{record}'),
-            'edit' => EditAdmin::route('/{record}/edit'),
+            'index' => ListUsers::route('/'),
+            'create' => CreateUser::route('/create'),
+            'view' => ViewUser::route('/{record}'),
+            'edit' => EditUser::route('/{record}/edit'),
         ];
     }
 }
