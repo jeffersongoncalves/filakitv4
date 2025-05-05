@@ -14,7 +14,7 @@ web applications with a ready-to-use multi-panel structure.
 ## Features
 
 - **Laravel 12.x** - The latest version of the most elegant PHP framework
-- **Filament 3.x** - Powerful and flexible admin framework
+- **Filament 4.x** - Powerful and flexible admin framework
 - **Multi-Panel Structure** - Includes three pre-configured panels:
     - Admin Panel (`/admin`) - For system administrators
     - App Panel (`/app`) - For authenticated application users
@@ -31,7 +31,7 @@ web applications with a ready-to-use multi-panel structure.
 
 Clone the repository
 ``` bash
-laravel new my-app --using=jeffersongoncalves/filakit --database=mysql
+laravel new my-app --using=jeffersongoncalves/filakitv4 --database=mysql
 ```
 
 Install JavaScript dependencies
@@ -63,7 +63,7 @@ php artisan serve
 
 Clone the repository
 ```bash
-laravel new my-app --using=jeffersongoncalves/filakit --database=mysql
+laravel new my-app --using=jeffersongoncalves/filakitv4 --database=mysql
 ```
 
 Move into the project directory
