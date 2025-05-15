@@ -9,6 +9,7 @@ use Filament\Support\Facades\FilamentView;
 use Filament\View\PanelsRenderHook;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\ServiceProvider;
+use function view;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -29,6 +30,7 @@ class AppServiceProvider extends ServiceProvider
         if (config('filakit.favicon.enabled')) {
             FilamentView::registerRenderHook(PanelsRenderHook::HEAD_START, fn (): View => view('components.favicon'));
         }
+        FilamentView::registerRenderHook(PanelsRenderHook::HEAD_START, fn (): View => view('components.js-md5'));
     }
 
     /**
