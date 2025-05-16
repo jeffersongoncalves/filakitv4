@@ -19,6 +19,7 @@ use Illuminate\Contracts\View\View;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Validation\ValidationException;
 use STS\FilamentImpersonate;
+
 use function view;
 
 class AppServiceProvider extends ServiceProvider
@@ -44,9 +45,9 @@ class AppServiceProvider extends ServiceProvider
             $this->app->register(PublicPanelProvider::class);
         }
         if (config('filakit.favicon.enabled')) {
-            FilamentView::registerRenderHook(PanelsRenderHook::HEAD_START, fn(): View => view('components.favicon'));
+            FilamentView::registerRenderHook(PanelsRenderHook::HEAD_START, fn (): View => view('components.favicon'));
         }
-        FilamentView::registerRenderHook(PanelsRenderHook::HEAD_START, fn(): View => view('components.js-md5'));
+        FilamentView::registerRenderHook(PanelsRenderHook::HEAD_START, fn (): View => view('components.js-md5'));
     }
 
     /**
@@ -142,7 +143,7 @@ class AppServiceProvider extends ServiceProvider
             return $component
                 ->native(false)
                 ->selectablePlaceholder(function (Forms\Components\Select $component) {
-                    return !$component->isRequired();
+                    return ! $component->isRequired();
                 })
                 ->searchable(function (Forms\Components\Select $component) {
                     return $component->hasRelationship();
