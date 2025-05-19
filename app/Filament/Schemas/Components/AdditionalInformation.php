@@ -11,8 +11,8 @@ class AdditionalInformation
     {
         $dates = collect($dates)->map(fn ($date) => TextEntry::make($date)->dateTime())->toArray();
 
-        return Section::make('ADDITIONAL INFORMATION')
-            ->description('Information on the date of registration and date of modification.')
+        return Section::make(__('ADDITIONAL INFORMATION'))
+            ->description(__('Information on the date of registration and date of modification.'))
             ->columns()
             ->schema($dates);
     }
