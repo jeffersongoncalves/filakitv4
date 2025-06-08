@@ -4,6 +4,9 @@
     "type": "project",
     "description": "The skeleton application for the FilamentPHP.",
     "keywords": [
+        "laravel-starter-kit",
+        "starter-kit",
+        "filament-starter-kit",
         "laravel",
         "framework",
         "filament",
