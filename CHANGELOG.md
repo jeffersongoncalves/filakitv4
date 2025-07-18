@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## v4.0.0-beta17 - 2025-07-18
+
+### What's Changed
+
+* Update dependabot.yml by @jeffersongoncalves in https://github.com/jeffersongoncalves/filakitv4/pull/30
+
+**Full Changelog**: https://github.com/jeffersongoncalves/filakitv4/compare/v4.0.0-beta16...v4.0.0-beta17
+
 ## v4.0.0-beta16 - 2025-07-16
 
 ### What's Changed
