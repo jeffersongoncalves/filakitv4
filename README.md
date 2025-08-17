@@ -183,6 +183,50 @@ The `config/filakit.php` file centralizes the configuration of the starter kit, 
 - Branding options (logo, colors)
 - Authentication guards
 
+## Perfil do Usuário — joaopaulolndev/filament-edit-profile
+
+Este projeto já vem com o plugin Filament Edit Profile integrado para os painéis Admin e App. Ele adiciona uma página completa de edição de perfil com avatar, idioma, cor do tema, segurança (tokens, MFA), sessões de navegador, alteração de e‑mail e senha.
+
+- Rotas (padrão neste projeto):
+  - Admin: /admin/my-profile
+  - App: /app/my-profile
+- Navegação: por padrão, a página não aparece no menu (shouldRegisterNavigation(false)). Se quiser exibir no menu da barra lateral, altere para true no provedor do painel.
+
+Onde configurar
+- Provedores dos painéis
+  - Admin: app/Providers/Filament/AdminPanelProvider.php
+  - App: app/Providers/Filament/AppPanelProvider.php
+  Nestes arquivos você pode ajustar:
+  - ->slug('my-profile') para mudar a URL (ex.: 'perfil')
+  - ->setTitle('My Profile') e ->setNavigationLabel('My Profile')
+  - ->setNavigationGroup('Group Profile'), ->setIcon('heroicon-o-user'), ->setSort(10)
+  - ->shouldRegisterNavigation(true|false) para mostrar/ocultar no menu
+  - Formulários exibidos: ->shouldShowEmailForm(), ->shouldShowLocaleForm([...]), ->shouldShowThemeColorForm(), ->shouldShowSanctumTokens(), ->shouldShowMultiFactorAuthentication(), ->shouldShowBrowserSessionsForm(), ->shouldShowAvatarForm()
+
+- Configurações gerais: config/filament-edit-profile.php
+  - locales: opções de idioma disponíveis na página de perfil
+  - locale_column: coluna usada no seu modelo para idioma (padrão: locale)
+  - theme_color_column: coluna para cor do tema (padrão: theme_color)
+  - avatar_column: coluna do avatar (padrão: avatar_url)
+  - disk: disco de armazenamento usado para o avatar (padrão: public)
+  - visibility: visibilidade do arquivo (padrão: public)
+
+Migrações e modelos
+- As colunas necessárias já estão contempladas nas migrações padrão deste kit (users e admins): avatar_url, locale e theme_color, utilizando os nomes definidos em config/filament-edit-profile.php.
+- Os modelos App\Models\User e App\Models\Admin já leem o avatar usando a configuração do plugin (getFilamentAvatarUrl).
+
+Armazenamento de avatar
+- Garanta que o disco de arquivos esteja configurado e que o link de storage exista:
+  php artisan storage:link
+- Ajuste o disk e visibility no arquivo de configuração conforme sua infraestrutura.
+
+Como acessar rapidamente
+- Via URL direta: /admin/my-profile ou /app/my-profile
+- Para deixar visível na navegação lateral, mude shouldRegisterNavigation(true) no respectivo Provider.
+
+Referência
+- Repositório do plugin: https://github.com/joaopaulolndev/filament-edit-profile
+
 ## Resources
 
 FilaKit includes support for:
