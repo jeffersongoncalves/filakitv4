@@ -87,7 +87,7 @@ class AppPanelProvider extends PanelProvider
             ])
             ->userMenuItems([
                 'profile' => Action::make('profile')
-                    ->label(fn () => auth('web')->user()->name)
+                    ->label(fn (): string => __('My Profile'))
                     ->url(fn (): string => EditProfilePage::getUrl())
                     ->icon('heroicon-m-user-circle'),
             ])
