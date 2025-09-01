@@ -53,6 +53,7 @@ class GuestPanelProvider extends PanelProvider
             ->plugins([
                 //
             ])
+            ->userMenu(false)
             ->topNavigation()
             ->databaseNotifications(false);
     }
