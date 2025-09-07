@@ -32,12 +32,13 @@ class GuestPanelProvider extends PanelProvider
             ->brandLogoHeight('50px')
             ->viteTheme('resources/css/filament/guest/theme.css')
             ->defaultThemeMode(config('filakit.theme_mode', ThemeMode::Dark))
-            ->discoverResources(in: app_path('Filament/Guest/Resources'), for: 'App\\Filament\\Guest\\Resources')
+            ->discoverClusters(in: app_path('Filament/Guest/Clusters'), for: 'App\\Filament\\Guest\\Clusters')
             ->discoverPages(in: app_path('Filament/Guest/Pages'), for: 'App\\Filament\\Guest\\Pages')
+            ->discoverResources(in: app_path('Filament/Guest/Resources'), for: 'App\\Filament\\Guest\\Resources')
+            ->discoverWidgets(in: app_path('Filament/Guest/Widgets'), for: 'App\\Filament\\Guest\\Widgets')
             ->pages([
                 Pages\Dashboard::class,
             ])
-            ->discoverWidgets(in: app_path('Filament/Guest/Widgets'), for: 'App\\Filament\\Guest\\Widgets')
             ->widgets([])
             ->middleware([
                 EncryptCookies::class,

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Filament\Pages\Auth;
+namespace App\Filament\Admin\Pages\Auth;
 
 class Login extends \Filament\Auth\Pages\Login
 {

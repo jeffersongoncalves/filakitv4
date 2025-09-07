@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Filament\Resources\Admins\Pages;
+namespace App\Filament\Admin\Resources\Users\Pages;
 
-use App\Filament\Resources\Admins\AdminResource;
+use App\Filament\Admin\Resources\Users\UserResource;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\EditAction;
 use Filament\Resources\Pages\ViewRecord;
 
-class ViewAdmin extends ViewRecord
+class ViewUser extends ViewRecord
 {
-    protected static string $resource = AdminResource::class;
+    protected static string $resource = UserResource::class;
 
     protected function getHeaderActions(): array
     {

@@ -1,8 +1,8 @@
 @import '../../../../vendor/filament/filament/resources/css/theme.css';
 
-@source '../../../../app/Filament/Public/**/*';
+@source '../../../../app/Filament/Guest/**/*';
 @source '../../../../resources/views/components/**/*';
-@source '../../../../resources/views/filament/public/**/*';
+@source '../../../../resources/views/filament/guest/**/*';
 
 ::-webkit-scrollbar {
     width: .56vw !important;

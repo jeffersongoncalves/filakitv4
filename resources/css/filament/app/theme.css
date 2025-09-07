@@ -2,7 +2,7 @@
 
 @source '../../../../app/Filament/App/**/*';
 @source '../../../../resources/views/components/**/*';
-@source '../../../../resources/views/filament/App/**/*';
+@source '../../../../resources/views/filament/app/**/*';
 
 ::-webkit-scrollbar {
     width: .56vw !important;

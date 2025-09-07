@@ -37,15 +37,16 @@ class AppPanelProvider extends PanelProvider
                 'primary' => Color::Green,
             ])
             ->brandLogo(fn () => Vite::asset(config('filakit.favicon.logo')))
-            ->brandLogoHeight(fn () => request()->is('admin/login', 'admin/password-reset/*') ? '121px' : '50px')
+            ->brandLogoHeight(fn () => request()->is('app/login', 'app/password-reset/*') ? '121px' : '50px')
             ->viteTheme('resources/css/filament/app/theme.css')
             ->defaultThemeMode(config('filakit.theme_mode', ThemeMode::Dark))
-            ->discoverResources(in: app_path('Filament/App/Resources'), for: 'App\\Filament\\App\\Resources')
+            ->discoverClusters(in: app_path('Filament/App/Clusters'), for: 'App\\Filament\\App\\Clusters')
             ->discoverPages(in: app_path('Filament/App/Pages'), for: 'App\\Filament\\App\\Pages')
+            ->discoverResources(in: app_path('Filament/App/Resources'), for: 'App\\Filament\\App\\Resources')
+            ->discoverWidgets(in: app_path('Filament/App/Widgets'), for: 'App\\Filament\\App\\Widgets')
             ->pages([
                 Pages\Dashboard::class,
             ])
-            ->discoverWidgets(in: app_path('Filament/App/Widgets'), for: 'App\\Filament\\App\\Widgets')
             ->widgets([
                 Widgets\AccountWidget::class,
                 Widgets\FilamentInfoWidget::class,
