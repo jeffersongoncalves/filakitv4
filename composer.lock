@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "achyutn/filament-log-viewer",
-            "version": "v1.4.2",
+            "version": "v1.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/achyutkneupane/filament-log-viewer.git",
-                "reference": "016fcd25dd520aa07132d149b627e621d3490e06"
+                "reference": "41745d829a05d06da0e6938167e47311067f2bac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/achyutkneupane/filament-log-viewer/zipball/016fcd25dd520aa07132d149b627e621d3490e06",
-                "reference": "016fcd25dd520aa07132d149b627e621d3490e06",
+                "url": "https://api.github.com/repos/achyutkneupane/filament-log-viewer/zipball/41745d829a05d06da0e6938167e47311067f2bac",
+                "reference": "41745d829a05d06da0e6938167e47311067f2bac",
                 "shasum": ""
             },
             "require": {
@@ -66,7 +66,7 @@
             ],
             "support": {
                 "issues": "https://github.com/achyutkneupane/filament-log-viewer/issues",
-                "source": "https://github.com/achyutkneupane/filament-log-viewer/tree/v1.4.2"
+                "source": "https://github.com/achyutkneupane/filament-log-viewer/tree/v1.4.4"
             },
             "funding": [
                 {
@@ -82,7 +82,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2025-09-27T17:25:24+00:00"
+            "time": "2025-10-01T16:41:58+00:00"
         },
         {
             "name": "anourvalar/eloquent-serialize",
@@ -2986,16 +2986,16 @@
         },
         {
             "name": "league/csv",
-            "version": "9.25.0",
+            "version": "9.26.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/csv.git",
-                "reference": "f856f532866369fb1debe4e7c5a1db185f40ef86"
+                "reference": "7fce732754d043f3938899e5183e2d0f3d31b571"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/csv/zipball/f856f532866369fb1debe4e7c5a1db185f40ef86",
-                "reference": "f856f532866369fb1debe4e7c5a1db185f40ef86",
+                "url": "https://api.github.com/repos/thephpleague/csv/zipball/7fce732754d043f3938899e5183e2d0f3d31b571",
+                "reference": "7fce732754d043f3938899e5183e2d0f3d31b571",
                 "shasum": ""
             },
             "require": {
@@ -3073,7 +3073,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-09-11T08:29:08+00:00"
+            "time": "2025-10-01T11:24:54+00:00"
         },
         {
             "name": "league/flysystem",
