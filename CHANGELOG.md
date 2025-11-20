@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## 4.2.3 - 2025-11-20
+
+### What's Changed
+
+* build(deps): bump the actions-deps group with 2 updates by @dependabot[bot] in https://github.com/jeffersongoncalves/filakitv4/pull/86
+* build(deps): bump the actions-deps group with 2 updates by @dependabot[bot] in https://github.com/jeffersongoncalves/filakitv4/pull/87
+* build(deps-dev): bump barryvdh/laravel-debugbar from 3.16.0 to 3.16.1 in the actions-deps group by @dependabot[bot] in https://github.com/jeffersongoncalves/filakitv4/pull/88
+
+**Full Changelog**: https://github.com/jeffersongoncalves/filakitv4/compare/4.2.2...4.2.3
+
 ## 4.2.2 - 2025-11-14
 
 ### What's Changed
