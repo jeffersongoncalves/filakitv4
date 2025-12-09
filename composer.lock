@@ -8679,16 +8679,16 @@
         },
         {
             "name": "wallacemartinss/filament-icon-picker",
-            "version": "v1.2.0",
+            "version": "v1.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wallacemartinss/filament-icon-picker.git",
-                "reference": "efc1f3638099f898427e648881971c11144aee58"
+                "reference": "9ef04217713bd088b12b9380cfc1b78b5a16dc5c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wallacemartinss/filament-icon-picker/zipball/efc1f3638099f898427e648881971c11144aee58",
-                "reference": "efc1f3638099f898427e648881971c11144aee58",
+                "url": "https://api.github.com/repos/wallacemartinss/filament-icon-picker/zipball/9ef04217713bd088b12b9380cfc1b78b5a16dc5c",
+                "reference": "9ef04217713bd088b12b9380cfc1b78b5a16dc5c",
                 "shasum": ""
             },
             "require": {
@@ -8698,6 +8698,7 @@
                 "spatie/laravel-package-tools": "^1.16"
             },
             "require-dev": {
+                "laravel/pint": "^1.26",
                 "orchestra/testbench": "^10.0",
                 "phpunit/phpunit": "^11.0"
             },
@@ -8750,9 +8751,9 @@
             ],
             "support": {
                 "issues": "https://github.com/wallacemartinss/filament-icon-picker/issues",
-                "source": "https://github.com/wallacemartinss/filament-icon-picker/tree/v1.2.0"
+                "source": "https://github.com/wallacemartinss/filament-icon-picker/tree/v1.4.4"
             },
-            "time": "2025-12-06T18:30:40+00:00"
+            "time": "2025-12-08T15:12:49+00:00"
         }
     ],
     "packages-dev": [
@@ -12767,5 +12768,5 @@
         "ext-pcntl": "7.1",
         "ext-posix": "7.1"
     },
-    "plugin-api-version": "2.9.0"
+    "plugin-api-version": "2.6.0"
 }
