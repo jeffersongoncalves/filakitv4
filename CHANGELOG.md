@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## 4.3.1 - 2025-12-09
+
+### What's Changed
+
+* Add filament-icon-picker dependency for icon selection by @jeffersongoncalves in https://github.com/jeffersongoncalves/filakitv4/pull/96
+* build(deps-dev): bump vite from 7.2.6 to 7.2.7 in the actions-deps group by @dependabot[bot] in https://github.com/jeffersongoncalves/filakitv4/pull/97
+* build(deps): bump wallacemartinss/filament-icon-picker from 1.2.0 to 1.4.4 in the actions-deps group by @dependabot[bot] in https://github.com/jeffersongoncalves/filakitv4/pull/98
+
+**Full Changelog**: https://github.com/jeffersongoncalves/filakitv4/compare/4.3.0...4.3.1
+
 ## 4.3.0 - 2025-12-05
 
 ### What's Changed
