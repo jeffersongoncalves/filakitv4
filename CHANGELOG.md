@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file.
 
+## 4.4.0 - 2025-12-30
+
+### What's Changed
+
+* build(deps): bump the actions-deps group with 2 updates by @dependabot[bot] in https://github.com/jeffersongoncalves/filakitv4/pull/99
+* build(deps-dev): bump barryvdh/laravel-ide-helper from 3.6.0 to 3.6.1 in the actions-deps group by @dependabot[bot] in https://github.com/jeffersongoncalves/filakitv4/pull/100
+* build(deps-dev): bump the actions-deps group with 2 updates by @dependabot[bot] in https://github.com/jeffersongoncalves/filakitv4/pull/101
+* build(deps-dev): bump the actions-deps group with 2 updates by @dependabot[bot] in https://github.com/jeffersongoncalves/filakitv4/pull/102
+* build(deps-dev): bump larastan/larastan from 3.8.0 to 3.8.1 in the actions-deps group by @dependabot[bot] in https://github.com/jeffersongoncalves/filakitv4/pull/103
+* build(deps): bump the actions-deps group with 2 updates by @dependabot[bot] in https://github.com/jeffersongoncalves/filakitv4/pull/104
+* build(deps): bump the actions-deps group with 2 updates by @dependabot[bot] in https://github.com/jeffersongoncalves/filakitv4/pull/105
+* build(deps): bump livewire/livewire from 3.7.2 to 3.7.3 in the actions-deps group by @dependabot[bot] in https://github.com/jeffersongoncalves/filakitv4/pull/106
+* build(deps): bump laravel/framework from 12.43.1 to 12.44.0 in the actions-deps group by @dependabot[bot] in https://github.com/jeffersongoncalves/filakitv4/pull/107
+* build(deps-dev): bump barryvdh/laravel-debugbar from 3.16.2 to 3.16.3 in the actions-deps group by @dependabot[bot] in https://github.com/jeffersongoncalves/filakitv4/pull/108
+* build(deps): bump filament/filament from 4.3.1 to 4.4.0 in the actions-deps group by @dependabot[bot] in https://github.com/jeffersongoncalves/filakitv4/pull/109
+
+**Full Changelog**: https://github.com/jeffersongoncalves/filakitv4/compare/4.3.1...4.4.0
+
 ## 4.3.1 - 2025-12-09
 
 ### What's Changed
