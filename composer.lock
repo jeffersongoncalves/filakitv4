@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f6c47539deea79508840ddd29ea83b6a",
+    "content-hash": "de69308d9c0150f9c3fc87ccb8a7a4d9",
     "packages": [
         {
             "name": "achyutn/filament-log-viewer",
@@ -2162,6 +2162,77 @@
             "time": "2026-03-26T23:01:33+00:00"
         },
         {
+            "name": "jeffersongoncalves/filament-additional-information",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jeffersongoncalves/filament-additional-information.git",
+                "reference": "c92e358ebde3ee69241606c17995e0a29cdfada7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jeffersongoncalves/filament-additional-information/zipball/c92e358ebde3ee69241606c17995e0a29cdfada7",
+                "reference": "c92e358ebde3ee69241606c17995e0a29cdfada7",
+                "shasum": ""
+            },
+            "require": {
+                "filament/filament": "^4.0",
+                "php": "^8.2|^8.3|^8.4",
+                "spatie/laravel-package-tools": "^1.14.0"
+            },
+            "require-dev": {
+                "larastan/larastan": "^3.0",
+                "laravel/pint": "^1.21",
+                "orchestra/testbench": "^9.0|^10.0",
+                "pestphp/pest": "^3.0|^4.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "JeffersonGoncalves\\Filament\\AdditionalInformation\\FilamentAdditionalInformationServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "JeffersonGoncalves\\Filament\\AdditionalInformation\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jefferson Gonçalves",
+                    "email": "gerson.simao.92@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A reusable Filament infolist section that displays created/updated (and any other) timestamp entries via a simple make() factory.",
+            "homepage": "https://github.com/jeffersongoncalves/filament-additional-information",
+            "keywords": [
+                "additional-information",
+                "filament",
+                "filament-plugin",
+                "infolist",
+                "jeffersongoncalves",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/jeffersongoncalves/filament-additional-information/issues",
+                "source": "https://github.com/jeffersongoncalves/filament-additional-information/tree/2.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/jeffersongoncalves",
+                    "type": "github"
+                }
+            ],
+            "time": "2026-06-24T00:36:22+00:00"
+        },
+        {
             "name": "jeffersongoncalves/filament-logo",
             "version": "2.0.5",
             "source": {
@@ -2228,6 +2299,212 @@
                 }
             ],
             "time": "2026-03-04T03:15:15+00:00"
+        },
+        {
+            "name": "jeffersongoncalves/filament-pwa",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jeffersongoncalves/filament-pwa.git",
+                "reference": "30fa275d391b1ad14024886d15ea7fdaac5d2c65"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jeffersongoncalves/filament-pwa/zipball/30fa275d391b1ad14024886d15ea7fdaac5d2c65",
+                "reference": "30fa275d391b1ad14024886d15ea7fdaac5d2c65",
+                "shasum": ""
+            },
+            "require": {
+                "filament/filament": "^4.0",
+                "jeffersongoncalves/laravel-pwa-favicon": "^1.0.1",
+                "php": "^8.2|^8.3|^8.4",
+                "spatie/laravel-package-tools": "^1.14.0"
+            },
+            "require-dev": {
+                "larastan/larastan": "^3.0",
+                "laravel/pint": "^1.0",
+                "orchestra/testbench": "^9.0|^10.0",
+                "pestphp/pest": "^3.0|^4.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "JeffersonGoncalves\\Filament\\Pwa\\FilamentPwaServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "JeffersonGoncalves\\Filament\\Pwa\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jefferson Gonçalves",
+                    "email": "gerson.simao.92@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Filament plugin that injects the full PWA <head> markup (favicons, Apple touch icons, manifest link, msapplication tiles, theme-color and mobile web-app metas) into your panels via laravel-pwa-favicon.",
+            "homepage": "https://github.com/jeffersongoncalves/filament-pwa",
+            "keywords": [
+                "favicon",
+                "filament",
+                "filament-pwa",
+                "jeffersongoncalves",
+                "laravel",
+                "manifest",
+                "pwa"
+            ],
+            "support": {
+                "issues": "https://github.com/jeffersongoncalves/filament-pwa/issues",
+                "source": "https://github.com/jeffersongoncalves/filament-pwa/tree/2.0.0"
+            },
+            "time": "2026-06-24T01:23:16+00:00"
+        },
+        {
+            "name": "jeffersongoncalves/filament-sensible-defaults",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jeffersongoncalves/filament-sensible-defaults.git",
+                "reference": "31da149e8b1d2b3953f77da97d21a1bf30c83c9f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jeffersongoncalves/filament-sensible-defaults/zipball/31da149e8b1d2b3953f77da97d21a1bf30c83c9f",
+                "reference": "31da149e8b1d2b3953f77da97d21a1bf30c83c9f",
+                "shasum": ""
+            },
+            "require": {
+                "filament/filament": "^4.0",
+                "php": "^8.2|^8.3|^8.4",
+                "spatie/laravel-package-tools": "^1.14.0"
+            },
+            "require-dev": {
+                "larastan/larastan": "^3.0",
+                "laravel/pint": "^1.21",
+                "orchestra/testbench": "^9.0|^10.0",
+                "pestphp/pest": "^3.0|^4.0",
+                "pestphp/pest-plugin-laravel": "^3.0|^4.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "JeffersonGoncalves\\Filament\\SensibleDefaults\\FilamentSensibleDefaultsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "JeffersonGoncalves\\Filament\\SensibleDefaults\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jefferson Gonçalves",
+                    "email": "gerson.simao.92@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A Filament plugin that applies a curated set of sensible, opinionated UI defaults across your panels (actions, forms, selects, date-time pickers, tables, pages and display formats) with config-driven, per-block opt-outs.",
+            "homepage": "https://github.com/jeffersongoncalves/filament-sensible-defaults",
+            "keywords": [
+                "filament",
+                "filament-sensible-defaults",
+                "jeffersongoncalves",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/jeffersongoncalves/filament-sensible-defaults/issues",
+                "source": "https://github.com/jeffersongoncalves/filament-sensible-defaults/tree/2.0.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/jeffersongoncalves",
+                    "type": "github"
+                }
+            ],
+            "time": "2026-06-24T01:41:41+00:00"
+        },
+        {
+            "name": "jeffersongoncalves/laravel-pwa-favicon",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jeffersongoncalves/laravel-pwa-favicon.git",
+                "reference": "7fdc46310129a46a0609db019b238589955a70e4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jeffersongoncalves/laravel-pwa-favicon/zipball/7fdc46310129a46a0609db019b238589955a70e4",
+                "reference": "7fdc46310129a46a0609db019b238589955a70e4",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/routing": "^11.0|^12.0|^13.0",
+                "illuminate/support": "^11.0|^12.0|^13.0",
+                "php": "^8.2",
+                "spatie/laravel-package-tools": "^1.14.0"
+            },
+            "require-dev": {
+                "larastan/larastan": "^3.0",
+                "orchestra/testbench": "^9.0|^10.0|^11.0",
+                "pestphp/pest": "^3.7.4|^4.0",
+                "pestphp/pest-plugin-laravel": "^3.0|^4.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "JeffersonGoncalves\\PwaFavicon\\PwaFaviconServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "JeffersonGoncalves\\PwaFavicon\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jefferson Gonçalves",
+                    "email": "gerson.simao.92@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "This Laravel package serves a spec-shaped PWA `manifest.json` (with Android density icons, a 512px master icon, and a maskable variant), a `browserconfig.xml` for Windows tiles, a `favicon.ico` route, and Apple touch icon head links. It turns any Laravel application into an installable Progressive Web App with sensible, publishable defaults.",
+            "homepage": "https://github.com/jeffersongoncalves/laravel-pwa-favicon",
+            "keywords": [
+                "jeffersongoncalves",
+                "laravel",
+                "laravel-pwa-favicon"
+            ],
+            "support": {
+                "issues": "https://github.com/jeffersongoncalves/laravel-pwa-favicon/issues",
+                "source": "https://github.com/jeffersongoncalves/laravel-pwa-favicon/tree/v1.0.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/jeffersongoncalves",
+                    "type": "github"
+                }
+            ],
+            "time": "2026-06-21T18:09:36+00:00"
         },
         {
             "name": "jenssegers/agent",

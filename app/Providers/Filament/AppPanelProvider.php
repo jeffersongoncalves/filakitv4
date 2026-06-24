@@ -21,6 +21,7 @@ use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\Support\Facades\Vite;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
+use JeffersonGoncalves\Filament\Pwa\FilamentPwaPlugin;
 use Joaopaulolndev\FilamentEditProfile\FilamentEditProfilePlugin;
 use Joaopaulolndev\FilamentEditProfile\Pages\EditProfilePage;
 
@@ -36,7 +37,7 @@ class AppPanelProvider extends PanelProvider
             ->colors([
                 'primary' => Color::Green,
             ])
-            ->brandLogo(fn () => Vite::asset(config('filakit.favicon.logo')))
+            ->brandLogo(fn () => Vite::asset(config('filakit.logo')))
             ->brandLogoHeight(fn () => request()->is('app/login', 'app/password-reset/*') ? '121px' : '50px')
             ->viteTheme('resources/css/filament/app/theme.css')
             ->defaultThemeMode(config('filakit.theme_mode', ThemeMode::Dark))
@@ -66,6 +67,7 @@ class AppPanelProvider extends PanelProvider
                 Authenticate::class,
             ])
             ->plugins([
+                FilamentPwaPlugin::make(),
                 FilamentEditProfilePlugin::make()
                     ->slug('my-profile')
                     ->setTitle(__('My Profile'))
